@@ -34,7 +34,8 @@ Nots:
 * All senders/recipients need to verify emails when using SES
 * Technically we don't have to use a presigned url, but its simple to generate, and we can later use it to upload the file it other ways.
 * If we, for some reason don't want to use a presigned url, we need to create another expiring link or token to use with the email.
-
+* Check SES sandbox to avoid verification
+* 
 --------------
 
 ## Alternative:
