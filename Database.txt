@@ -1,24 +1,25 @@
 We chose a relational DB.
 We need to analyze and decide which relational DB to choose.
 List of tables:
-a) Personans: admin, parents, kinder-gardener
+a) Personans: admin, parents, team members
 b) Children: parents, arrived/didn't arrive, daily report
 c) Attendance: dates, children names
-d) Daily report: meals, activities, medical care, required equipment from home
+d) Daily report: meals, activities, medical care, required equipment from home, child id
 e) Attendance per year per kiner-garden: all children in the specific kinder garden.
 f) kinder gardens: kinder garden, kinder gardeneer and children
 
 
 Screens list and queries:
 Parents:
-  1) get children per paren
+  1) get children per parent
   2) get daily report per Itamar /get last updated report per Itama
   3) update covid form for Itamar
   4) get events per Itamar's kindergarde
 
 Kinder-gardener:
   1) get children + attendance
-  2) update daily report per Itamar
-  3) update specific category in daily report per Itamar
-  4) get daily report per Itamar (category=${})
-  5) get covid reports per date
+  2) update attendance per child
+  3) update daily report per Itamar
+  4) update specific category in daily report per Itamar
+  5) get daily report per Itamar (category=${})
+  6) get covid reports per date
