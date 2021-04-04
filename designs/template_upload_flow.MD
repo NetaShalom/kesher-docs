@@ -1,6 +1,6 @@
 # Kindergarten template flow design
 
-An admin needs to be able to upload a csv (excel) file with the children details for the kindergarten.
+The kindergarten teacher needs to be able to upload a csv (excel) file with the children details for the kindergarten.
 They are supposed to get this via an initial email with the csv template file which they will fill and upload.
 They need to be able to create, update and in the future delete records.
 
@@ -8,17 +8,17 @@ Suggested solution:
 
 ## Using SES, Lambda, presigned urls
 
-*  **Question**: How does the admin gets this email (what triggers this and how)?
+*  **Question**: How does the kindergarten teacher gets this email (what triggers this and how)?
 * Bootstrapping email: 
    * Create a pre-signed url for the email - for uploading the file - this requires a bucket name, object name. the user that created the pre-signed url must have the permissions to upload the object
    * Presigned url should be limited to expire after a certain point
    * Attach the csv template file 
    * Send email 
-* Admin reply
+* Kindergarten teacher reply
    * User replies with the populated csv file (and the presigned url in the email)
    * SES will be configured with rules to accept this response and act upon it
    * Since we know the user email (we emailed them), we can set a rule to process any email for them and bounce from any other sender
-   * When we receive an email from the admin, trigger the processing lambda
+   * When we receive an email from the kindergarten teacher, trigger the processing lambda
 * Email processing lambda
    * Check presigned url for expiration and validity. If expired reply with the meaningful message.
    * If not expired, upload file to S3 for history/backup (that's where the presigned url is used)
