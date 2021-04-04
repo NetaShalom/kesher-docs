@@ -2,7 +2,7 @@ We chose a relational DB.
 We need to analyze and decide which relational DB to choose.
 List of tables:
 a) Personans: admin, parents, team members
-b) Children: parents, arrived/didn't arrive, daily report
+b) Children: parents, arrived/didn't arrive
 c) Attendance: dates, children names
 d) Daily report: meals, activities, medical care, required equipment from home, child id
 e) Attendance per year per kiner-garden: all children in the specific kinder garden.
