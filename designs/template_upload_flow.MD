@@ -1,4 +1,4 @@
-# Kindergarten template flow design
+# Kindergarten template upload flow design
 
 The kindergarten teacher needs to be able to upload a csv (excel) file with the children details for the kindergarten.
 They are supposed to get this via an initial email with the csv template file which they will fill and upload.
