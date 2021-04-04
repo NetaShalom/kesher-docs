@@ -10,7 +10,7 @@ Suggested solution:
 
 *  **Question**: How does the kindergarten teacher gets this email (what triggers this and how)?
 * Bootstrapping email: 
-   * Create a pre-signed url for the email - for uploading the file - this requires a bucket name, object name. the user that created the pre-signed url must have the permissions to upload the object
+   * Create a pre-signed url for the email - for uploading the file - this requires a bucket name, object name. the user that created the pre-signed url must have the permissions to upload the object. bucket will support versioning if we upload to the same file name. 
    * Presigned url should be limited to expire after a certain point
    * Attach the csv template file 
    * Send email 
