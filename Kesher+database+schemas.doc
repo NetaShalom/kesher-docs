@@ -1,0 +1,611 @@
+Date: Wed, 7 Apr 2021 08:44:13 +0300 (IDT)
+Message-ID: <825772703.45807.1617774253030@ca-il-conf-win.cyber-ark.com>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_45806_1252035149.1617774253030"
+
+------=_Part_45806_1252035149.1617774253030
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Kesher database schemas</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Kesher database schemas</h1>
+    <div class=3D"Section1">
+        <p><br></p>
+<p><strong>users </strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 55.=
+0689%;">
+<colgroup>
+<col style=3D"width: 3.0809%;">
+<col style=3D"width: 45.5178%;">
+<col style=3D"width: 11.8267%;">
+<col style=3D"width: 10.7335%;">
+<col style=3D"width: 11.6279%;">
+<col style=3D"width: 8.74578%;">
+<col style=3D"width: 8.24886%;">
+</colgroup>
+<tbody>
+<tr>
+<th colspan=3D"1" class=3D"confluenceTh">id</th>
+<th colspan=3D"1" class=3D"confluenceTh">user_type</th>
+<th class=3D"confluenceTh">first_name</th>
+<th class=3D"confluenceTh">last_name</th>
+<th class=3D"confluenceTh">email_address</th>
+<th colspan=3D"1" class=3D"confluenceTh">id_number</th>
+<th colspan=3D"1" class=3D"confluenceTh">is_deleted</th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">an auto generated index</td>
+<td colspan=3D"1" class=3D"confluenceTd">admin/kinder-gardener/parent/admin=
+_and_kindergardener</td>
+<td class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">true if need to be deleted</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><strong><span style=3D"color: rgb(23,43,77);">kindergarten</span>_staff_=
+mapping</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 52.=
+2146%;">
+<colgroup>
+<col style=3D"width: 17.4004%;">
+<col style=3D"width: 41.8239%;">
+<col style=3D"width: 40.566%;">
+</colgroup>
+<tbody>
+<tr>
+<th colspan=3D"1" class=3D"confluenceTh">record_id</th>
+<th colspan=3D"1" class=3D"confluenceTh"><p>user_id</p></th>
+<th colspan=3D"1" class=3D"confluenceTh"><strong><span style=3D"color: rgb(=
+23,43,77);">kindergarten</span>_id</strong></th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">an auto generated index</td>
+<td colspan=3D"1" class=3D"confluenceTd">the auto generated index from the =
+users table</td>
+<td colspan=3D"1" class=3D"confluenceTd">id number of the kindergarten as s=
+igned in the welfare office</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><br></p>
+<p><strong><span class=3D"inline-comment-marker" data-ref=3D"a89af557-3511-=
+463a-a221-ebbe73d3c87f">Kinder gartens</span></strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 47.=
+3917%;">
+<colgroup>
+<col style=3D"width: 19.193%;">
+<col style=3D"width: 46.1325%;">
+<col style=3D"width: 34.4549%;">
+</colgroup>
+<tbody>
+<tr>
+<th colspan=3D"1" class=3D"confluenceTh">record_id</th>
+<th class=3D"confluenceTh"><span style=3D"color: rgb(23,43,77);">kindergart=
+en_id</span></th>
+<th class=3D"confluenceTh"><p><strong>kindergarten_name</strong></p><p><br>=
+</p></th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">an auto generated index</td>
+<td class=3D"confluenceTd">id number of the kindergarten as signed in the w=
+elfare office</td>
+<td class=3D"confluenceTd">the name of the kindergarten</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><strong><span class=3D"inline-comment-marker" data-ref=3D"36a1ceb6-e5e0-=
+4023-8816-cae85f3591cf">Parents_children_mapping</span></strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 47.=
+7362%;">
+<colgroup>
+<col style=3D"width: 19.2638%;">
+<col style=3D"width: 45.293%;">
+<col style=3D"width: 35.2024%;">
+</colgroup>
+<tbody>
+<tr>
+<th colspan=3D"1" class=3D"confluenceTh">record_id</th>
+<th class=3D"confluenceTh">child_id</th>
+<th class=3D"confluenceTh"><p>parent_email</p></th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">an auto generated index</td>
+<td class=3D"confluenceTd">the child_id from the children table</td>
+<td class=3D"confluenceTd">google account</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><strong><span class=3D"inline-comment-marker" data-ref=3D"9fdc0aa4-b28a-=
+42bb-9693-4f36d8335aad">Children</span></strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th colspan=3D"1" class=3D"confluenceTh">record id</th>
+<th class=3D"confluenceTh"><span style=3D"color: rgb(23,43,77);">kindergart=
+en_</span>id</th>
+<th class=3D"confluenceTh">child_id</th>
+<th colspan=3D"1" class=3D"confluenceTh">child_first_name</th>
+<th colspan=3D"1" class=3D"confluenceTh"><strong>child_last_name</strong></=
+th>
+<th colspan=3D"1" class=3D"confluenceTh"><strong>child_birth_date</strong><=
+/th>
+<th class=3D"confluenceTh"><p><strong>is_deleted</strong></p></th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">an auto generated index</td>
+<td class=3D"confluenceTd">the kindergarten_id from kinder_gartens table</t=
+d>
+<td class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">date of birth</td>
+<td class=3D"confluenceTd">true if need to be deleted</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><strong><span class=3D"inline-comment-marker" data-ref=3D"d54e7c82-a189-=
+41be-bf11-9f75d7905cc5">Attendance</span></strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th colspan=3D"1" class=3D"confluenceTh">record_id</th>
+<th class=3D"confluenceTh">child_id</th>
+<th class=3D"confluenceTh"><strong>arrival_date</strong></th>
+<th class=3D"confluenceTh"><strong>arrival_time</strong></th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">an auto generated index</td>
+<td class=3D"confluenceTd">the child_id</td>
+<td class=3D"confluenceTd">the date when the child arrived</td>
+<td class=3D"confluenceTd">the time when the child arrived</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><strong>Report categories</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th colspan=3D"1" class=3D"confluenceTh">record_id</th>
+<th class=3D"confluenceTh">category_name</th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">an auto generated index</td>
+<td colspan=3D"1" class=3D"confluenceTd">meals</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">activities</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">required equipment</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">medical care</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><strong>Subcategory</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th colspan=3D"1" class=3D"confluenceTh">record_id</th>
+<th class=3D"confluenceTh">category_id</th>
+<th class=3D"confluenceTh">subcategory_name</th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">an auto generated index</td>
+<td class=3D"confluenceTd">1</td>
+<td class=3D"confluenceTd">breakfast</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd">1</td>
+<td class=3D"confluenceTd">fruit</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">1</td>
+<td colspan=3D"1" class=3D"confluenceTd">launch</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">1</td>
+<td colspan=3D"1" class=3D"confluenceTd">minha</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span class=3D"inline-comment-mark=
+er" data-ref=3D"f22c9654-ddbb-4ef9-bf0c-2c5e63a3e4ca">2</span></td>
+<td colspan=3D"1" class=3D"confluenceTd">table games</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">2</td>
+<td colspan=3D"1" class=3D"confluenceTd">jamboree</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">2</td>
+<td colspan=3D"1" class=3D"confluenceTd">play around</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">2</td>
+<td colspan=3D"1" class=3D"confluenceTd">arts and crafts</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">2</td>
+<td colspan=3D"1" class=3D"confluenceTd">daily skills</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">sheet&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">clean clothes</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">diapers</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">fresh wipes</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">other</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">4</td>
+<td colspan=3D"1" class=3D"confluenceTd">physiotherapy</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">4</td>
+<td colspan=3D"1" class=3D"confluenceTd">speech therapy</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">4</td>
+<td colspan=3D"1" class=3D"confluenceTd">occupational therapy</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">4</td>
+<td colspan=3D"1" class=3D"confluenceTd">emotional therapy</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><strong><span class=3D"inline-comment-marker" data-ref=3D"542237f7-a84a-=
+4db6-ab56-c78b6420a212">Daily </span><span class=3D"inline-comment-marker" =
+data-ref=3D"05c2c517-876e-4fcc-aa84-6f248b9fcb9e"><span class=3D"inline-com=
+ment-marker" data-ref=3D"542237f7-a84a-4db6-ab56-c78b6420a212">report</span=
+></span></strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th colspan=3D"1" class=3D"confluenceTh">record_id</th>
+<th colspan=3D"1" class=3D"confluenceTh"><span style=3D"color: rgb(0,0,0);"=
+>sender_id</span></th>
+<th class=3D"confluenceTh">child_id</th>
+<th class=3D"confluenceTh"><strong>report_date</strong></th>
+<th class=3D"confluenceTh"><strong>category_id</strong></th>
+<th colspan=3D"1" class=3D"confluenceTh"><strong>subcategory_id</strong></t=
+h>
+<th colspan=3D"1" class=3D"confluenceTh"><strong>report_value</strong></th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">an auto generated index</td>
+<td colspan=3D"1" class=3D"confluenceTd">the generated id of who that repor=
+ted from the users table</td>
+<td class=3D"confluenceTd">the child_id from the children table</td>
+<td class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd">record_id from report_categories table</td>
+<td colspan=3D"1" class=3D"confluenceTd">record_id from report_subcategorie=
+s table</td>
+<td colspan=3D"1" class=3D"confluenceTd">free text that describes the subca=
+tegory</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_45806_1252035149.1617774253030--
