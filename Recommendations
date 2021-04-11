@@ -1,0 +1,9 @@
+1. Allergies for kids (can be saved as tags per child)
+2. Additional management screens
+    For teacher
+    For Admin
+3. Add additional personas types
+4. Input validation with government DB (to validate childs parents)
+5. Input validation for the data upload (csv) and from the rest of the UI screens
+6. Test (based on the test scenarios file and additional test)
+7. Filter and sort by tags (the data is saved with their types so it can be implemented)
