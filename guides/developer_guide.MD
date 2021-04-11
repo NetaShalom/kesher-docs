@@ -5,6 +5,39 @@ Due to lack of time and resources, we couldn't create designated frontend for th
 Because of this, we came up with a simpler way to perform these operations. 
 These are the data upload to the system by the admin (list of kindergartens) and the teachers (list of children in each kindergarten).
 
+
+### Data upload flows points for hand-off meeting
+* Describe the data upload flow
+* We require domain registration for sending/receiving emails - see https://github.com/CyberArkForTheCommunity/kesher-docs/blob/main/guides/domain_registration_guide.MD
+* Use make use of pre-singed url to authorize the user, since email sender cannot be used to identify the user
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html
+* Email recipients must verify their email address by clicking the verify emails. 
+  * Take this into account when mailing teachers
+* Data upload code is in: 
+  * cdk/kesher_service_cdk/service_stack/email_services/email_services.py
+  * cdk/kesher_service_cdk/service_stack/email_services/functions/handler.py
+* We did not implement db read/write. **IMPORTANT!** since we are dealing with user input, you must make sure that writing this data into the db is done securely (think about SQL injection) - some mini infrastructure for reading/writing to/from db should be created.
+* Need to implement the logic of admin_submit and teacher_submit
+  * admin_submit
+    * TODO read email content - implemented in teacher_submit
+    * TODO upload_s3_object_presigned (implemented)- this is how we verify the sender
+    * TODO read csv content, verify data
+    *  TODO Populate database - make sure that data is inserted into the DB in a secure way to avoid SQL injection
+    *  TODO Email teachers - if not verified, send verify email, otherwise normal email
+    * TODO - must handle all errors - presigned url errors (expiration, bad url), other errors
+    *  TODO - email the user with the result - success, error (with details and instructions)
+
+  * teacher_submit
+    * DONE read email content - implemented in teacher_submit
+    * DONE upload_s3_object_presigned (implemented)- this is how we verify the sender
+    * TODO - handle errors - expiration, invalid link etc. 
+    *  TODO - input validation on data - on error email back with the message id (this can be used for troubleshooting)
+    * TODO - read records from file, push to DB - make sure that data is inserted into the DB in a secure way to avoid SQL injection
+    * TODO Respond to sender with result (do we respond to sender on any error? don't divulge informative errors to rogue senders)
+
+
+
+
 ### Data upload by admin.
 1. An email is sent from adminsubmit@{KESHER_DOMAIN_NAME} (whatever you select your domain name to be) with an attachment of the kindergartens templates for admin to fill. 
 
