@@ -1,0 +1,381 @@
+Date: Wed, 7 Apr 2021 09:22:42 +0300 (IDT)
+Message-ID: <1350667519.46286.1617776562166@ca-il-conf-win.cyber-ark.com>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_46285_1442167302.1617776562151"
+
+------=_Part_46285_1442167302.1617776562151
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Kesher - APIs</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Kesher - APIs</h1>
+    <div class=3D"Section1">
+        <p><br></p>
+<p><span style=3D"color: rgb(255,0,0);">TBD</span> - do we have to send a h=
+eader with the email of the logged in user (until we're able to extract it =
+from the token)?</p>
+<p><strong>Note</strong>: all GET responses will filter out items that are =
+marked as deleted.</p>
+<h2 id=3D"KesherAPIs-Children">Children</h2>
+<ul style=3D"margin-left: 0.375in;">
+<li><span style=3D"color: rgb(255,0,0);">Add (Bulk) - Future, currently wit=
+h Excel</span></li>
+<li><p><span><span class=3D"inline-comment-marker" data-ref=3D"b25df942-33d=
+a-4c0b-97f0-bd99933bae4b">List</span> (<strong>filter by kindergarden (staf=
+f) /parent (parent)</strong>)<br>Note: validate email of token<br></span></=
+p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>api/children GET</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">[
+=09{
+=09=09"first_name": "Moshe",
+=09=09"last_name": "Cohen",
+=09=09"id": "3456346436",
+=09=09"attendance_time": 2346346457 (datetime of attendance in current day)
+=09},
+=09...
+]</pre>=20
+</div>
+</div><p><span><br></span></p></li>
+<li><span>ID</span>
+<ul>
+<li><span>Attendance</span>
+<ul>
+<li><p><span>Update (PUT)</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>api/children/CHILD_ID/attendance PUT</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: js; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+=09"Attended": "True"
+}</pre>=20
+</div>
+</div><p><span><br></span></p></li>
+</ul></li>
+<li><span>DailyReports</span></li>
+</ul></li>
+<ul style=3D"margin-left: 0.375in;">
+<li><p><span><span class=3D"inline-comment-marker" data-ref=3D"b880875f-ab3=
+f-4784-a8ba-8b0b346bf026">List</span><br></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>api/children/CHILD_ID/daily-reports GET</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: js; gutter: false; theme: Confluence" data-theme=3D"Confluence">[
+=09{
+=09=09"record_id": 2345325,
+=09=09"sender_id": 346346,
+=09=09"child_id": "2346346346",
+=09=09"category_id": 235346,
+=09=09"subcategory_id": 235346,
+=09=09"value": "eating dinner",
+=09=09"timestamp": 754747547
+=09},
+=09...
+]</pre>=20
+</div>
+</div></li>
+<li><p><span>Add<br></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>api/children/CHILD_ID/daily-reports POST</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: js; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+=09"category_id": 235346,
+=09"subcategory_id": 235346,
+=09"value": "eating dinner",
+}</pre>=20
+</div>
+</div><p><span><br></span></p></li>
+</ul>
+</ul>
+<p><br></p>
+<h2 id=3D"KesherAPIs-Categories">Categories</h2>
+<ul>
+<li><p><span>List (including subcategories)<br></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>api/report-categories GET</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: js; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+=09categories:
+=09[
+=09=09"category_id": 346346,
+=09=09"category_name": "meal",
+=09=09"sub_categories": [
+=09=09=09{
+=09=09=09=09"subcategory_id": 23523532,
+=09=09=09=09"subcategory_name": "breakfast"
+=09=09=09},
+=09=09=09{
+=09=09=09=09"subcategory_id": 34543,
+=09=09=09=09"subcategory_name": "lunch"
+=09=09=09},
+=09=09]
+=09],
+}</pre>=20
+</div>
+</div></li>
+</ul>
+<p><br></p>
+<h2 id=3D"KesherAPIs-User-Profile">User-Profile</h2>
+<p>Get the logged in user profile. currently we need only the user type but=
+ we can add any info in the future</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>api/user-profile GET</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: js; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+=09"role_type": 3
+}</pre>=20
+</div>
+</div>
+<p><br></p>
+<p style=3D"margin-left: 0.375in;"><br></p>
+<p style=3D"margin-left: 0.75in;"><br></p>
+    </div>
+</body>
+</html>
+------=_Part_46285_1442167302.1617776562151--
